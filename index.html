@@ -8,55 +8,135 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
     <title>Väga oluline auto - The CAR</title>
+    <style>
+      section {
+        padding: 60px 0;
+      }
+    </style>
   </head>
   <body>
-    <!-- headingud/pealkirjad -->
-    <h1>The Car</h1>
-    <h2>see on h2</h2>
-    <h3>see on h3</h3>
-    <h2 class="h3">this is an h2 tag with the h3 class</h2>
+    <!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+    <div class="container-xxl">
+      <!-- navbar brand / title -->
+      <a class="navbar-brand" href="#intro">
+        <span class="text-secondary fw-bold">
+          Net Ninja Pro - the Car
+        </span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- display headings -->
-    <h1 class="display-1">display 1 heading</h1>
-    <h1 class="display-4">display 2 heading</h1>
-    <h1 class="display-6">display 6 heading</h1>
-    <h1 class="display-1">See on h1 display-1 klassiga</h1>
-    <p class="display-1">paragraaf display-1</p>
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#topics">About The Car</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Get in Touch</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item ms-2 d-none d-md-inline">
+            <a class="btn btn-secondary" href="#pricing">Buy Meow</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- lead text & alignment -->
-    <small>väike tekstikene</small>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p class="lead text-center">hello world</p>
-    <p class="lead text-end">hello world</p>
-    <p class="lead">hello world</p>
 
-    <!-- teksti dekoreerimine ja font weight -->
-    <p class="text-decoration-underline">see on allajoonitud tekst</p>
-    <p class="text-decoration-line-through">see on maha tõmmatud tekst</p>
-    <p class="fw-bold">see on paksus kirjas</p>
-    <small>väike tekst on ka</small>
+    <!-- main image & intro text -->
+    <section id="info">
+      <div class="container-lg"> 
+        <div class="row justify-content-center slign-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Black-Belt</div>
+              <div class="display-5 text-muted">Your coding skills</div>
+            </h1>
+            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Meow</a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <img class="img-fluid" src="/assets/car.png" alt="Cat picture">
+        </div>
+      </div>
+    </section>
 
-    <!-- teksti värvus -->
-    <p class="text-primary">theme primary colour</p>
-    <p class="text-secondary">theme secondary colour</p>
-    <p class="text-info">theme info colour</p>
-    <p class="text-warning">theme warning colour</p>
-    <p class="text-success">theme success colour</p>
-    <p class="text-danger">theme danger colour</p>
-    <p class="text-muted">theme danger colour</p>
+    <!-- pricing plans -->
+     <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
 
-    <!-- tausta värvus -->
-    <p class="text-white bg-primary">valge tekst primary taustal</p>
-    <p class="text-white bg-secondary">valge tekst secondary taustal</p>
-    <p class="text-white bg-info">valge tekst info taustal</p>
-    <p class="text-white bg-warning">valge tekst warning taustal</p>
-    <p class="text-white bg-success">valge tekst success taustal</p>
-    <p class="text-white bg-danger">valge tekst danger taustal</p>
-    <p class="text-white bg-muted">valge tekst muted taustal</p>
+        <div class="row my-5 align-items-center justify-content-center g-0">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eCar download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">9.99€</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Meow</a>
+              </div>
+            </div>
+          </div>
 
+            <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text primary">Most Popular</div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">eCar download & all updates</p>
+                <p class="display-5 my-4 text-primary fw-bold">14.99€</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et voluptas, ex ullam nam tenetur!</p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Meow</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle">eCar download, updates & extras</p>
+                <p class="display-5 my-4 text-primary fw-bold">24.99€</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Meow</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+     </section>
+
+     <!-- Topics at a glance -->
+      <section id="topics">
+        <div class="container-md">
+          <div class="text-center">
+            <h2>Inside the Car...</h2>
+            <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+          </div>
+
+          <div class="row my-5 g-5 justify content-around align-items-center">
+            <div class="col-6 col-lg-4">
+              <img src="/assets/car2.png" class="img-fluid" alt="eCar">
+            </div>
+          </div>
+        </div>
+      </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
